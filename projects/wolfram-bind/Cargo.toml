@@ -1,0 +1,26 @@
+[package]
+name = "wolfram-bind"
+publish = false
+version = "0.0.0"
+authors = ["Aster <192607617@qq.com>"]
+description = "..."
+repository = "..."
+readme = "Readme.md"
+license = "MPL-2.0"
+edition = "2021"
+
+[dependencies]
+wolfram-library-link = "0.2.3"
+
+[dependencies.mid-point-ellipse]
+version = "0.1.0"
+path = "../mid-point-ellipse"
+
+[dev-dependencies]
+
+[features]
+default = []
+
+[package.metadata.wee]
+t = "cargo test"
+p = "cargo publish --allow-dirty"
